@@ -14,6 +14,7 @@ root.geometry("400x200")
 # Use Threading
 def Threading():
     t1=threading.Thread(target=alarm)
+    t1.setDaemon(True)
     t1.start()
 
 # The main function
